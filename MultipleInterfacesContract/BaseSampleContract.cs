@@ -1,11 +1,8 @@
 using Stratis.SmartContracts;
 
-public class SampleContract : SmartContract, ISayHello, ISayWorld
+public class BaseSampleContract : SmartContract
 {
-    public SampleContract(ISmartContractState contractState) : base(contractState)
+    public BaseSampleContract(ISmartContractState contractState) : base(contractState)
     {
     }
-
-    public string SayHello() => "Hello";
-    public string SayWorld() => "World";
 }
